@@ -1,0 +1,44 @@
+#!/system/bin/sh
+
+# Wait for the system to mount the internal media and remout it as r/o
+# this should prevent the system from writing to it until we make the 
+# switch, yet keeps the /data/media r/w, so at the end it won't be r/o
+for i in $(seq 1 1 3000)
+do
+    if ( grep -c "/storage/sdcard0" /proc/mounts ); then
+        mount -o remount,ro /storage/sdcard0
+        break;
+    fi
+    usleep 100000
+done
+
+# now wait for the external media and remount
+for i in $(seq 1 1 3000)
+do
+    if ( grep -c "/storage/extSdCard" /proc/mounts ); then
+   
+        # create new temporary mount point 
+        mount -o remount,rw /
+        mkdir /storage/tmpmnt
+        mount -o remount,ro /  
+
+        # do the rebinding using the temporary mount point
+        mount -o bind /data/media /storage/tmpmnt
+        mount -o bind /storage/extSdCard /storage/sdcard0
+        mount -o bind /storage/extSdCard /data/media
+        umount /mnt/extSdCard
+        mount -o bind /storage/tmpmnt /storage/extSdCard
+        umount /storage/tmpmnt
+		
+		# make bind for ums mode
+		mkdir -p /storage/extSdCard/external_sd/sdcard1
+		touch /storage/extSdCard/external_sd/.nomedia
+		mount -o bind /storage/sdcard0 /storage/extSdCard/external_sd/sdcard1
+    
+        # done
+        break;
+    fi
+    usleep 100000
+done
+
+exit
