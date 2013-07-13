@@ -1,0 +1,17 @@
+<SamsungMobileLanguage>
+   <Country>USA</Country>
+   <CountryISO>en</CountryISO>
+   <SalesCode>VMU</SalesCode>
+   <LanguageSet>
+          <Display>
+          en_US;es_US;
+          </Display>
+          <Input>
+                <SupportList>
+        	en_US;es;
+                </SupportList>
+                <EnableList>
+                </EnableList>
+          </Input>
+   </LanguageSet>
+</SamsungMobileLanguage>
