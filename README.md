@@ -1,4 +1,4 @@
-Victorious
+Sprintorious
 ==========
 
-A deodexed and optimized ROM for the Samsung Galaxy Victory Virgin Mobile SPH-L300 (goghvmu)
+A deodexed and optimized ROM for the Samsung Galaxy Victory Sprint SPH-L300 (goghspr)
