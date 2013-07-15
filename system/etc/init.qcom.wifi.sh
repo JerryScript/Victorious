@@ -140,7 +140,7 @@ case "$target" in
       *)
         echo "*** WI-FI chip ID is not specified in /persist/wlan_chip_id **"
         echo "*** Use the default WCN driver.                             **"
-        setprop wlan.driver.ath 0
+        setprop wlan.driver.ath 0 
         rm  /system/lib/modules/wlan.ko
         rm  /system/lib/modules/cfg80211.ko
         ln -s /system/lib/modules/prima/prima_wlan.ko /system/lib/modules/wlan.ko
@@ -175,8 +175,6 @@ case "$target" in
                         # so that the driver knows userspace is
                         # available for firmware download requests
                         echo 1 > $wcnssnode
-			echo 3 > /sys/module/subsystem_restart/parameters/restart_level
-                        echo 1 > /sys/module/wcnss_ssr_8960/parameters/enable_riva_ssr
                         ;;
                     *)
                         # There is not a kernel module present and
@@ -227,7 +225,24 @@ case "$target" in
         esac
     ;;
     msm7630*)
-    exit 0
+        wifishd=`getprop wlan.driver.status`
+        wlanchip=`cat /persist/wlan_chip_id`
+        echo "The WLAN Chip ID is $wlanchip"
+        case "$wlanchip" in
+            "WCN1314")
+             ln -s /system/lib/modules/volans/WCN1314_rf.ko /system/lib/modules/wlan.ko
+             ;;
+            "WCN1312")
+             ln -s /system/lib/modules/libra/libra.ko /system/lib/modules/wlan.ko
+	      ln -s /data/hostapd/qcom_cfg.ini /etc/firmware/wlan/qcom_cfg.ini
+             ln -s /persist/qcom_wlan_nv.bin /etc/firmware/wlan/qcom_wlan_nv.bin
+	      ;;
+           *)
+            echo "********************************************************************"
+	     echo "*** Error:WI-FI chip ID is not specified in /persist/wlan_chip_id **"
+            echo "*******    WI-FI may not work    ***********************************"
+            ;;
+        esac
     ;;
     msm7627*)
         ln -s /data/hostapd/qcom_cfg.ini /etc/firmware/wlan/qcom_cfg.ini

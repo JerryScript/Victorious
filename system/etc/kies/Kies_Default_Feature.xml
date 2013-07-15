@@ -18,9 +18,9 @@ jhwan.kim@hdlnc.com  -->
 <!-- CPW -->
 <FeatureSet>
 <!-- KIES -->
-<CscFeature_Kies_SupportCategory>Device,Calendar,Contents,Phonebook,Memo,Message,Phonebook_com.android.exchange,Phonebook_com.google,Phonebook_com.osp.app.signin</CscFeature_Kies_SupportCategory>
+<CscFeature_Kies_SupportCategory>Device,Calendar,Contents,Phonebook,Message,Phonebook_com.android.exchange,Phonebook_com.google,Phonebook_com.osp.app.signin</CscFeature_Kies_SupportCategory>
 <CscFeature_Kies_DrCategory>MEID,CSC_Sales,Normal,MDN_File,Normal,GT-I9300,Normal,Normal,Normal</CscFeature_Kies_DrCategory>
 <CscFeature_Kies_WifiCategory>Phone,Normal,Sprint_HotSpot,800X480,20,Normal</CscFeature_Kies_WifiCategory>
-<CscFeature_Kies_NpsCategory>Splanner,Tmemo2,Normal,none_FmRadio,none_Memo,Normal,Normal,Normal,Normal,Normal,Normal,Boost,Normal,Normal,Normal,Normal</CscFeature_Kies_NpsCategory>
+<CscFeature_Kies_NpsCategory>Splanner,Normal,Normal,none_FmRadio,none_Memo,Normal,Normal,Normal,Normal,Normal,Normal,Boost,Normal,Normal,Normal,Normal</CscFeature_Kies_NpsCategory>
 </FeatureSet>
 </SamsungMobileFeature>

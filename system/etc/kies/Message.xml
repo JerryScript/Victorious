@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SDP version="0.9">
 	<Message>
-		<ASyncObex>
-		<FileFolderPath value="internal:\_SamsungBnR_\MDG\"/>
-		<SupportVersion value="1.0" />
-		</ASyncObex>
 		<SupportBox>
 			<SupportInbox value="true">
 				<!--Is Support Inbox data load / Max count-->
@@ -45,7 +41,7 @@
 		
     <MMS accessibility="all">
         <MaxCount value="-1" /> 
-        <Version accessibility="all" value="3.0" /> 
+        <Version accessibility="all" value="2.0" /> 
         <TargetFilePath value="Internal:\_SamsungBnR_\BR\MMS\" /> 
     </MMS>
 	</Message>

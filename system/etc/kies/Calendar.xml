@@ -2,15 +2,10 @@
 <SDP version="0.9" domain="particular">
 
 	<Calendar>
-		<ASyncObex>
-		<FileFolderPath value="internal:\_SamsungBnR_\MDG\"/>
-		<SupportVersion value="1.0" />
-		</ASyncObex>
 		<ImageLinkSupport value="TRUE">
 			<InternalRootPath value="/storage/sdcard0"/>
 			<ExternalRootPath value="/storage/extSdCard"/>
 		</ImageLinkSupport>
-		<SupportTodoGroup accessibility="all" value="TRUE"/>
 		<SyncHistory value="TRUE" />
 		<SupportRecurrenceException value="TRUE" />
 		<AvailableWithoutAccount value="TRUE" />

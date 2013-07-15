@@ -26,7 +26,6 @@
             <USB>
                 <ConnectMode name="PCLink" value= "MODEM">
                     <SupportApp>
-                        <TMemo2/>
                         <Calendar/>
                         <Phonebook/>
                         <Photo/>
@@ -48,7 +47,6 @@
             <WIFI>
                 <ConnectMode name="PCLink" value= "MODEM">
                     <SupportApp>
-                        <TMemo2/>
                         <Phonebook/>
                         <Calendar/>
                         <Photo/>

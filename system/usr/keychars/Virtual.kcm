@@ -255,7 +255,6 @@ key SPACE {
 key ENTER {
     label:                              '\n'
     base:                               '\n'
-    alt,shift,ctrl:                     '\n'
 }
 
 key TAB {

@@ -1,10 +1,6 @@
 <?xml version="1.0"?>
 <SDP version="0.9" domain="particular">
 	<Memo>
-		<ASyncObex>
-		<FileFolderPath value="internal:\_SamsungBnR_\MDG\"/>
-		<SupportVersion value="1.0" />
-		</ASyncObex>
 		<MaxItemCount value="65535"/>
 		<Enums>
 			<Enum name="ATTRIBUTE_TYPE" DataLength="1">

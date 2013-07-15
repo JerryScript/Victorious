@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SDP version="1.1">
 	<Phonebook>
-		<ASyncObex>
-		<FileFolderPath value="internal:\_SamsungBnR_\MDG\"/>
-		<SupportVersion value="1.0" />
-		</ASyncObex>
 		<SyncHistory value = "TRUE" />
 		<LastModifiedTime value="TRUE" />
 		<MaxItemCount value="65535" />

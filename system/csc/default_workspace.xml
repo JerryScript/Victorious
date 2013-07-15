@@ -25,8 +25,8 @@
         launcher:y="3" />
 
         <favorite
-        launcher:packageName="com.google.android.apps.shopper"
-        launcher:className="com.google.android.apps.shopper.home.HomeActivity"
+        launcher:packageName="com.android.settings"
+        launcher:className="com.android.settings.Settings$WifiApSettingsActivity"
         launcher:screen="1"
         launcher:x="1"
         launcher:y="3" />
@@ -39,8 +39,8 @@
         launcher:y="3" />
          
         <favorite
-        launcher:packageName="com.sprint.w.installer"
-        launcher:className="com.sprint.w.installer.SprintIdHome"
+        launcher:packageName="com.sec.android.app.samsungapps"
+        launcher:className="com.sec.android.app.samsungapps.Main"
         launcher:screen="1"
         launcher:x="3"
         launcher:y="3" />
@@ -74,8 +74,8 @@
         launcher:y="3" />
 
         <favorite
-        launcher:packageName="com.android.email"
-        launcher:className="com.android.email.activity.Welcome"
+        launcher:packageName="com.google.android.gm"
+        launcher:className="com.google.android.gm.ConversationListActivityGmail"
         launcher:screen="2"
         launcher:x="1"
         launcher:y="3" />
@@ -119,9 +119,9 @@
         launcher:x="1"
         launcher:y="3" />
 
-	<favorite
-        launcher:packageName="com.sec.android.app.samsungapps"
-        launcher:className="com.sec.android.app.samsungapps.Main"
+        <favorite
+        launcher:packageName="com.android.email"
+        launcher:className="com.android.email.activity.Welcome"
         launcher:screen="3"
         launcher:x="2"
         launcher:y="3" />  

@@ -1,4 +1,4 @@
-﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<?xml  version="1.0" encoding="UTF-8" ?>
 <!-- It can be added for each operators like below form
 
 <ABC>                       -> sales code
@@ -20,7 +20,7 @@ jhwan.kim@hdlnc.com  -->
 <CountryISO></CountryISO>
 <SalesCode></SalesCode>
 
-<!-- VMU -->
+<!-- SPR -->
 <FeatureSet>
 
 <!-- Common -->
@@ -37,6 +37,14 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Camera_CamcorderEnablePromptPopupToSelectRecMode>true</CscFeature_Camera_CamcorderEnablePromptPopupToSelectRecMode>
 
 <!-- Message -->
+
+<CscFeature_Message_MaxMessageSize>307200</CscFeature_Message_MaxMessageSize>
+<CscFeature_Message_MaxImageWidth>640</CscFeature_Message_MaxImageWidth>
+<CscFeature_Message_MaxImageHeight>480</CscFeature_Message_MaxImageHeight>
+<CscFeature_Message_RecipientLimit>10</CscFeature_Message_RecipientLimit>
+
+
+
 
 <CscFeature_Message_HttpSocketTimeout>60000</CscFeature_Message_HttpSocketTimeout>
 <CscFeature_Message_MinSlideDuration>5</CscFeature_Message_MinSlideDuration>
@@ -122,6 +130,8 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Message_DisableMenuCBChannel>true</CscFeature_Message_DisableMenuCBChannel>
 <CscFeature_Message_DisableMenuSMSC>true</CscFeature_Message_DisableMenuSMSC>
 <CscFeature_Message_EnableTextTemplate>true</CscFeature_Message_EnableTextTemplate>
+<CscFeature_Message_EnablePreloadTextTemplate>true</CscFeature_Message_EnablePreloadTextTemplate>
+<CscFeature_Message_EnableReceivePortSMS>true</CscFeature_Message_EnableReceivePortSMS>
 <CscFeature_Message_DiscardSpecificPortSms>true</CscFeature_Message_DiscardSpecificPortSms>
 <CscFeature_Message_EnableSegmentedSMS>true</CscFeature_Message_EnableSegmentedSMS>
 <CscFeature_Message_DisableLogs>true</CscFeature_Message_DisableLogs>
@@ -130,7 +140,7 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Message_DisableSmscEditable>true</CscFeature_Message_DisableSmscEditable>
 <CscFeature_Message_CheckTelNumAreaCode>true</CscFeature_Message_CheckTelNumAreaCode>
 <CscFeature_Message_CMASOperator>us-spr</CscFeature_Message_CMASOperator>
-<CscFeature_Message_EnableRoamGuard>false</CscFeature_Message_EnableRoamGuard>
+<CscFeature_Message_EnableRoamGuard>true</CscFeature_Message_EnableRoamGuard>
 <CscFeature_Message_GalleryView4SingleImageMms>imagetext</CscFeature_Message_GalleryView4SingleImageMms>
 <CscFeature_Message_MinRecipientLengthAs>3</CscFeature_Message_MinRecipientLengthAs>
 <CscFeature_Message_MaxRecipientLengthAs>17</CscFeature_Message_MaxRecipientLengthAs>
@@ -146,25 +156,24 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Settings_FindMyMobile>false</CscFeature_Settings_FindMyMobile>
 <CscFeature_Setting_EnableHwVersionDisplay>true</CscFeature_Setting_EnableHwVersionDisplay>
 <CscFeature_Setting_EnableConversion4MEIDAndESN>true</CscFeature_Setting_EnableConversion4MEIDAndESN>
-<CscFeature_Setting_EnableRoamingMenu>false</CscFeature_Setting_EnableRoamingMenu>
+<CscFeature_Setting_EnableRoamingMenu>true</CscFeature_Setting_EnableRoamingMenu>
 
 <!-- NFC -->
 <CscFeature_NFC_SetSecureEventType>GOOGLE</CscFeature_NFC_SetSecureEventType>
 <CscFeature_NFC_SetAccessControlType>NONE</CscFeature_NFC_SetAccessControlType>
-<CscFeature_SmartcardService_SetAccessControlType>NONE</CscFeature_SmartcardService_SetAccessControlType>
 
 <!-- WEB -->
-<CscFeature_Web_SetUserAgent>VMU</CscFeature_Web_SetUserAgent>
-<CscFeature_Web_SetUAProfile>http://uaprof.vmobl.com/Samsung/%s-VMUB/1.0/UAProf.xml</CscFeature_Web_SetUAProfile>
+<CscFeature_Web_SetUserAgent>SPR</CscFeature_Web_SetUserAgent>
+<CscFeature_Web_SetUAProfile>http://device.sprintpcs.com/Samsung/%s/%s.rdf</CscFeature_Web_SetUAProfile>
 <CscFeature_Web_Bool_EnableDRM>true</CscFeature_Web_Bool_EnableDRM>
-<CscFeature_Web_SetHomepageURL>http://vmupublic.cellmania.com/wap/f_stw.do</CscFeature_Web_SetHomepageURL>
-<CscFeature_Web_Str_homeurl>http://vmupublic.cellmania.com/wap/f_stw.do</CscFeature_Web_Str_homeurl>
+<CscFeature_Web_SetHomepageURL>http://sprint.com/powerdeck</CscFeature_Web_SetHomepageURL>
+<CscFeature_Web_Str_homeurl>http://sprint.com/powerdeck</CscFeature_Web_Str_homeurl>
 <CscFeature_Web_Bool_DisableRSS>false</CscFeature_Web_Bool_DisableRSS>
 <CscFeature_Web_Bool_DisableVoiceSearch>false</CscFeature_Web_Bool_DisableVoiceSearch>
 <CscFeature_Web_Bool_DisableRedirectionChooser>false</CscFeature_Web_Bool_DisableRedirectionChooser>
 <CscFeature_Web_Bool_Disable_Chooser_For_APPLICATION_X_APPLICATIONFOLDER>false</CscFeature_Web_Bool_Disable_Chooser_For_APPLICATION_X_APPLICATIONFOLDER>
 <CscFeature_Web_Bool_StartWIFISettingInAirplaneMode>false</CscFeature_Web_Bool_StartWIFISettingInAirplaneMode>
-<CscFeature_Web_Bool_SkipSettingDefaultBookmarkImage>true</CscFeature_Web_Bool_SkipSettingDefaultBookmarkImage>
+<CscFeature_Web_Bool_SkipSettingDefaultBookmarkImage>false</CscFeature_Web_Bool_SkipSettingDefaultBookmarkImage>
 <CscFeature_Web_Bool_EnableUAProfile>true</CscFeature_Web_Bool_EnableUAProfile>
 <CscFeature_Web_Bool_UAProfile_withVersion>true</CscFeature_Web_Bool_UAProfile_withVersion>
 <CscFeature_Web_Bool_RemoveVideoDownload>false</CscFeature_Web_Bool_RemoveVideoDownload>
@@ -200,8 +209,6 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Launcher_TotalPageCount>5</CscFeature_Launcher_TotalPageCount>
 <CscFeature_Launcher_DefaultPageNumber>2</CscFeature_Launcher_DefaultPageNumber>
 <CscFeature_Launcher_EnableViewByAlphabetAsDefault>true</CscFeature_Launcher_EnableViewByAlphabetAsDefault>
-<CscFeature_Launcher_DisableHelpUI>true</CscFeature_Launcher_DisableHelpUI>
-<CscFeature_Launcher_EnableInegratedLauncher>true</CscFeature_Launcher_EnableInegratedLauncher>
 
 <!-- SIP -->
 <CscFeature_Sip_DisableMenuKeyboardSwipe>true</CscFeature_Sip_DisableMenuKeyboardSwipe>
@@ -209,10 +216,5 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Sip_DefaultMultiModalKeyAs>VOICE</CscFeature_Sip_DefaultMultiModalKeyAs>
 <CscFeature_Sip_DisableAutoCorrection>true</CscFeature_Sip_DisableAutoCorrection>
 <CscFeature_Sip_EnableLanguageToggleButton>true</CscFeature_Sip_EnableLanguageToggleButton>
-<CscFeature_Sip_EnableSymbolInSecondary>en_US;es</CscFeature_Sip_EnableSymbolInSecondary>
-
-<!-- Common -->
-<CscFeature_Common_UseChameleon>true</CscFeature_Common_UseChameleon>
-
 </FeatureSet>
 </SamsungMobileFeature>

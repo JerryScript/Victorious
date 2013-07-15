@@ -29,7 +29,6 @@
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
         </MediaCodec>
-        <MediaCodec name="OMX.google.flac.encoder" type="audio/flac"/>
         <MediaCodec name="OMX.qcom.audio.encoder.qcelp13" type="audio/qcelp" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
@@ -197,11 +196,6 @@
             <Quirk name="defers-output-buffer-allocation" />
             <Quirk name="requires-timestamp-reorder" />
         </MediaCodec>
-        <MediaCodec name="OMX.qcom.video.decoder.vp8" type="video/x-vnd.on2.vp8" >
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Quirk name="defers-output-buffer-allocation" />
-        </MediaCodec>
         <!-- Video Software  -->
         <MediaCodec name="OMX.ittiam.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-output-ports" />
@@ -212,23 +206,25 @@
             <Quirk name="defers-output-buffer-allocation" />
         </MediaCodec>
          <MediaCodec name="OMX.SEC.wmv7.dec" type="video/x-ms-wmv7" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Quirk name="defers-output-buffer-allocation" />
         </MediaCodec>
          <MediaCodec name="OMX.SEC.wmv8.dec" type="video/x-ms-wmv8" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Quirk name="defers-output-buffer-allocation" />
         </MediaCodec>
-        <MediaCodec name="OMX.SEC.mp43.dec" type="video/mp43" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />
+         <MediaCodec name="OMX.SEC.mp43.dec" type="video/mp43" >
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Quirk name="defers-output-buffer-allocation" />
         </MediaCodec>
-        <MediaCodec name="OMX.SEC.h263sr.dec" type="video/sorenson" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />
+         <MediaCodec name="OMX.SEC.h263sr.dec" type="video/sorenson" >
+            <Quirk name="requires-allocate-on-input-ports" />
+            <Quirk name="requires-allocate-on-output-ports" />
+            <Quirk name="defers-output-buffer-allocation" />
         </MediaCodec>
-        <MediaCodec name="OMX.SEC.vp8.dec" type="video/x-vnd.on2.vp8" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />	
-        </MediaCodec>
-        <MediaCodec name="OMX.SEC.rv.dec" type="video/rv" >
-            <Quirk name="decoder-ignores-streamcorrupt-error" />
-        </MediaCodec>             
         <MediaCodec name="OMX.google.h264.decoder" type="video/avc" />
         <MediaCodec name="OMX.google.mpeg4.decoder" type="video/mp4v-es" />
         <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" />

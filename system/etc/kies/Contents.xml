@@ -550,13 +550,6 @@
 			</FileFormat> 
 		</Playlist>
 
-		<TMemo2 Version="1.0">
-  		    <DefaultFolder>
-     		        <Internal value="/TMemo"/>
-     		        <External value=""/>
-  		    </DefaultFolder>
-		</TMemo2>
-
 		<!-- U1 not support <Ebook> <DefaultFolder> <Internal value="/Ebook/download;/Ebook/import" 
 			/> <External value="/Ebook/download;/Ebook/import"/> </DefaultFolder> <FileFormat> 
 			<EPUB> <Version value="1.0"/> <MaxFileSize value=""/> </EPUB> <PDF> <Version 
@@ -570,10 +563,9 @@
 			<Content name="Message" Type="Custom" version="2.0"
 				supportVersion="2.0" RestoreReboot="true">
 				<TargetFilePath value="System:\BR\Message.bk" />
-			</Content>
-			
-			<!-- not support<Content name="Memo" Type="Custom" version="2.0"
-				supportVersion="2.0" />  -->
+			</Content>			
+			<!-- 	<Content name="Memo" Type="Custom" version="2.0"
+				supportVersion="2.0" /> -->
 			<Content name="Task" Type="Custom" version="2.0"
 				supportVersion="2.0" /> 
 			<!-- m0xx minidiary removed. 	
@@ -616,7 +608,7 @@
 			<Content name="Others">
 				<FileExtension value="*" />
 				<TargetFilePath value="Internal:\*" />
-				<ExceptFolderPath value="Internal:\Android\data;Internal:\_SamsungBnR_\BR" />
+				<ExceptFolderPath value="Internal:\Android\data" />
 			</Content>
 
 			<Content name="Configuration" Type="Custom" version="2.0"
@@ -634,10 +626,6 @@
 				<TargetFilePath value="System:\BR\Email.bk" />
 			</Content>
 
-			<Content name="TMemo2" version="1.0" supportVersion="1.0" Detail="LinkedToSplanner">
-				<FileExtension value="snb"/>
-				<TargetFilePath value="Internal:\*"/>
-			</Content>
 		</BackupRestore>
 	</Contents>
 </SDP>
