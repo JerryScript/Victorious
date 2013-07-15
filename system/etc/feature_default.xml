@@ -39,6 +39,7 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Camera_CamcorderDefaultSideMenu>selfcamcorder,recordingmode,flashmode,effect</CscFeature_Camera_CamcorderDefaultSideMenu>
 <CscFeature_Camera_CameraFlicker>50hz</CscFeature_Camera_CameraFlicker>
 <CscFeature_Camera_UseShareShotFolderAs>false</CscFeature_Camera_UseShareShotFolderAs>
+<CscFeature_Camera_ShutterSoundMenu>true</CscFeature_Camera_ShutterSoundMenu>
 
 <!-- Message -->
 
@@ -46,7 +47,7 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Message_MmsModeCaptureVideoMaxSize>302080</CscFeature_Message_MmsModeCaptureVideoMaxSize>
 <CscFeature_Message_MaxImageWidth>640</CscFeature_Message_MaxImageWidth>
 <CscFeature_Message_MaxImageHeight>480</CscFeature_Message_MaxImageHeight>
-<CscFeature_Message_RecipientLimit>10</CscFeature_Message_RecipientLimit>
+<CscFeature_Message_RecipientLimit>999</CscFeature_Message_RecipientLimit>
 
 
 
@@ -87,6 +88,7 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Message_EnableFontSize>true</CscFeature_Message_EnableFontSize>
 <CscFeature_Message_EnableSplitMode>true</CscFeature_Message_EnableSplitMode>
 <CscFeature_Message_EnableTextFieldColor>true</CscFeature_Message_EnableTextFieldColor>
+<CscFeature_Message_ReplaceCRToNewLine>true</CscFeature_Message_ReplaceCRToNewLine>
 
 <CscFeature_Message_MaxMmsSize>307200</CscFeature_Message_MaxMmsSize>
 <CscFeature_Message_SplitMode>true</CscFeature_Message_SplitMode>
@@ -102,7 +104,10 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Message_EnableDSAC>false</CscFeature_Message_EnableDSAC>
 <CscFeature_Message_EnableSMSPcheckWhenSendSMS>false</CscFeature_Message_EnableSMSPcheckWhenSendSMS>
 <CscFeature_Message_EnableSegmentedSMS>false</CscFeature_Message_EnableSegmentedSMS>
-
+<CscFeature_Message_EnableScheduledMessage>true</CscFeature_Message_EnableScheduledMessage>
+<CscFeature_Message_EnableScheduledMsgBox>true</CscFeature_Message_EnableScheduledMsgBox>
+<CscFeature_Message_EnableMultiDraftBox>true</CscFeature_Message_EnableMultiDraftBox>
+<CscFeature_Message_EnableReplyAll>true</CscFeature_Message_EnableReplyAll>
 
 <!-- KIES -->
 <CscFeature_Kies_SupportCategory>Device,Calendar,Contents,Phonebook,Memo,Message,Phonebook_com.android.exchange,Phonebook_com.google</CscFeature_Kies_SupportCategory>
@@ -114,7 +119,7 @@ jhwan.kim@hdlnc.com  -->
 <!-- Contacts -->
 <CscFeature_Contact_SupportMotionCall>true</CscFeature_Contact_SupportMotionCall>
 <CscFeature_Contact_ImProviderFirstPostion_As>AIM</CscFeature_Contact_ImProviderFirstPostion_As>
-<CscFeature_Contact_SetLinkCountMaxAs>5</CscFeature_Contact_SetLinkCountMaxAs>
+<CscFeature_Contact_SetLinkCountMaxAs>999</CscFeature_Contact_SetLinkCountMaxAs>
 <CscFeature_Contact_AddPreloadedSpeedDialAs>None,0,None,None</CscFeature_Contact_AddPreloadedSpeedDialAs>
 <CscFeature_Contact_EnablePuzzySearch>NONE</CscFeature_Contact_EnablePuzzySearch>
 <CscFeature_Contact_EnableExceptionHandling4Corea>false</CscFeature_Contact_EnableExceptionHandling4Corea>
@@ -122,10 +127,11 @@ jhwan.kim@hdlnc.com  -->
 <CscFeature_Contact_MaxCountVcardAttachment>10</CscFeature_Contact_MaxCountVcardAttachment>
 <CscFeature_Contact_LimitNameLength>1000</CscFeature_Contact_LimitNameLength>
 <CscFeature_Contact_DoNotSaveEcc>false</CscFeature_Contact_DoNotSaveEcc>
-<CscFeature_Contact_FavoritesWidgetRows>3</CscFeature_Contact_FavoritesWidgetRows>
+<CscFeature_Contact_FavoritesWidgetRows>4</CscFeature_Contact_FavoritesWidgetRows>
 
 <!-- New Calendar -->
-<CscFeature_Calendar_EnableLocalHolidayDisplay>NONE</CscFeature_Calendar_EnableLocalHolidayDisplay>
+<CscFeature_Calendar_DisplayHoliday>USA</CscFeature_Calendar_DisplayHoliday>
+<CscFeature_Calendar_EnableLocalHolidayDisplay>USA</CscFeature_Calendar_EnableLocalHolidayDisplay>
 <CscFeature_Calendar_SetColorOfDays>XXXXXXR</CscFeature_Calendar_SetColorOfDays>
 <CscFeature_Calender_EnableWeatherInfo>false</CscFeature_Calender_EnableWeatherInfo>
 
@@ -151,6 +157,8 @@ jhwan.kim@hdlnc.com  -->
 <!-- Memo -->
 
 <!-- Dialer / Logs -->
+<CscFeature_Dialer_PhonebookNdigitsMatching>true</CscFeature_Dialer_PhonebookNdigitsMatching>
+<CscFeature_RIL_CallerIdMatchingDigit>true</CscFeature_RIL_CallerIdMatchingDigit>
 
 <!-- RIL -->
 <CscFeature_RIL_DisplayPlmnByLURejectCause>true</CscFeature_RIL_DisplayPlmnByLURejectCause>
@@ -191,6 +199,9 @@ jhwan.kim@hdlnc.com  -->
 
 <!-- WEB -->
 <CscFeature_Web_Bool_EnableDRM>true</CscFeature_Web_Bool_EnableDRM>
+<CscFeature_Web_AddOptionToTerminate>true</CscFeature_Web_AddOptionToTerminate>
+<CscFeature_Web_EnablePromptToExit>true</CscFeature_Web_EnablePromptToExit>
+<CscFeature_Web_EnableDesktopSiteAsDefault>true</CscFeature_Web_EnableDesktopSiteAsDefault>
 
 <!-- AppFW -->
 <CscFeature_Framework_HyperLinkDigit>5</CscFeature_Framework_HyperLinkDigit>
@@ -249,6 +260,7 @@ jhwan.kim@hdlnc.com  -->
 <!-- SPenGesturePad -->
 <CscFeature_SPenGesturePad_UseSearchEngine>false</CscFeature_SPenGesturePad_UseSearchEngine>
 
+<CscFeature_MultiWindow_AddOnApp>air.com.adobe.pstouch.oem1,com.acadoid.lecturenotes,com.adobe.reader,com.adsk.sketchbookhd,com.android.settings,com.android.settings.mt,com.cisco.anyconnect.vpn.android.avf,com.dama.paperartist,com.ebay.mobile,com.estrongs.android.pop,com.heku.readingtrainer,com.intsig.camscanner,com.intsig.lic.camscanner,com.mxtech.videoplayer.ad,com.onlinetvrecorder.SchoenerFernsehen2,com.opera.browser,com.quoord.tapatalkxda.activity,com.samsung.sec.android.application.csc,com.sand.airdroid,com.skype.raider,com.sonyericsson.album,com.starfinanz.smob.android.starmoney,com.steadfastinnovation.android.projectpapyrus,com.stephan.zeitungskiosk_pro,com.think_android.appmanagerpro ,com.tobiasschuerg.timetable,com.twitter.android,com.whatsapp,com.wolfram.android.alpha,com.zdworks.android.toolbox,de.finanzen100,de.goddchen.android.x.bash,de.hafas.android.db,de.leowandersleb.fluxcards,de.taf.rnv,eu.thedarken.sdm,org.coolreader,org.mozilla.firefox</CscFeature_MultiWindow_AddOnApp>
 
 </FeatureSet>
 </SamsungMobileFeature>
